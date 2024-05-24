@@ -1,0 +1,1 @@
+./vending 200 tests/200-Finish-Extra/consumer1-Configuration.txt tests/200-Finish-Extra/supplier1-Configuration.txt tests/200-Finish-Extra/supplier2-Configuration.txt tests/200-Finish-Extra/supplier3-Configuration.txt tests/200-Finish-Extra/consumer2-Configuration.txt tests/200-Finish-Extra/consumer3-Configuration.txt 

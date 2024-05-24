@@ -1,0 +1,1 @@
+./vending 150 tests/150-Finish-Extra/consumer1.txt  tests/150-Finish-Extra/consumer2.txt tests/150-Finish-Extra/consumer3.txt tests/150-Finish-Extra/supplier1.txt tests/150-Finish-Extra/supplier2.txt tests/150-Finish-Extra/supplier3.txt

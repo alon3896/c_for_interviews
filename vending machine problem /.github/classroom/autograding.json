@@ -1,0 +1,744 @@
+{
+  "tests": [
+    {
+      "name": "make all",
+      "setup": "",
+      "run": "make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 4
+    },
+    {
+      "name": "make clean",
+      "setup": "",
+      "run": "make clean",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 3
+    },
+    {
+      "name": "make",
+      "setup": "",
+      "run": "make",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 3
+    },
+    {
+      "name": "100 finish exact Running",
+      "setup": "chmod 700 100-finish-exact-test",
+      "run": "./100-finish-exact-test > 100-finish-exact-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 8,
+      "points": 5
+    },
+    {
+      "name": "100 finish exact Alice",
+      "setup": "",
+      "run": "cat 100-finish-exact-results",
+      "input": "",
+      "output": "...\\s*...\\s*\\d+\\s*\\d+:\\d+:\\d+\\s*\\d\\d\\d\\d\\s*Alice\\s*supplied\\s*25\\s*units.\\s*Stock\\s*after\\s*=",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "100 finish exact Alice count",
+      "setup": "",
+      "run": "cat 100-finish-exact-results | grep \"Alice supplied 25 units\" | wc -l",
+      "input": "",
+      "output": "10",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "100 finish exact Bob",
+      "setup": "",
+      "run": "cat 100-finish-exact-results",
+      "input": "",
+      "output": "...\\s*...\\s*\\d+\\s*\\d+:\\d+:\\d+\\s*\\d\\d\\d\\d\\s*Bob\\s*supplied\\s*35\\s*units.\\s*Stock\\s*after\\s*=",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "100 finish exact Bob count",
+      "setup": "",
+      "run": "cat 100-finish-exact-results | grep \"Bob supplied 35 units\" | wc -l",
+      "input": "",
+      "output": "30",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "100 finish exact Claire",
+      "setup": "",
+      "run": "cat 100-finish-exact-results",
+      "input": "",
+      "output": "...\\s*...\\s*\\d+\\s*\\d+:\\d+:\\d+\\s*\\d\\d\\d\\d\\s*Claire\\s*supplied\\s*16\\s*units.\\s*Stock\\s*after\\s*=",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "100 finish exact Claire count",
+      "setup": "",
+      "run": "cat 100-finish-exact-results | grep \"Claire supplied 16 units\" | wc -l",
+      "input": "",
+      "output": "18",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "100 finish exact Dan",
+      "setup": "",
+      "run": "cat 100-finish-exact-results",
+      "input": "",
+      "output": "...\\s*...\\s*\\d+\\s*\\d+:\\d+:\\d+\\s*\\d\\d\\d\\d\\s*Dan\\s+removed\\s+12\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "100 finish exact Dan count",
+      "setup": "",
+      "run": "cat 100-finish-exact-results | grep \"Dan removed 12 units\" | wc -l",
+      "input": "",
+      "output": "17",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "100 finish exact Ed",
+      "setup": "",
+      "run": "cat 100-finish-exact-results",
+      "input": "",
+      "output": "...\\s*...\\s*\\d+\\s*\\d+:\\d+:\\d+\\s*\\d\\d\\d\\d\\s*Ed\\s+removed\\s+34\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "100 finish exact Ed count",
+      "setup": "",
+      "run": "cat 100-finish-exact-results | grep \"Ed removed 34 units\" | wc -l",
+      "input": "",
+      "output": "30",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "100 finish exact Fran",
+      "setup": "",
+      "run": "cat 100-finish-exact-results",
+      "input": "",
+      "output": "...\\s*...\\s*\\d+\\s*\\d+:\\d+:\\d+\\s*\\d\\d\\d\\d\\s*Fran\\s+removed\\s+13\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "100 finish exact Fran count",
+      "setup": "",
+      "run": "cat 100-finish-exact-results | grep \"Fran removed 13 units\" | wc -l",
+      "input": "",
+      "output": "28",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "100 finish exact completion",
+      "setup": "",
+      "run": "cat 100-finish-exact-results",
+      "input": "",
+      "output": "...\\s*...\\s*\\d+\\s*\\d+:\\d+:\\d+\\s*\\d\\d\\d\\d\\s*All\\s+threads\\s+completed\\.\\s+Total\\s+consumed\\s+=\\s+1588\\.\\s+Final\\s+stock\\s+=\\s+0",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 2
+    },
+    {
+      "name": "150 finish extra Running",
+      "setup": "chmod 700 150-finish-extra-test",
+      "run": "./150-finish-extra-test > 150-finish-extra-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 8,
+      "points": 6
+    },
+    {
+      "name": "150 finish extra Alice complete",
+      "setup": "",
+      "run": "cat 150-finish-extra-results",
+      "input": "",
+      "output": "Supplier\\s+Alice\\s+completed",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "150 finish extra Bob complete",
+      "setup": "",
+      "run": "cat 150-finish-extra-results",
+      "input": "",
+      "output": "Supplier\\s+Bob\\s+completed",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "150 finish extra Claire complete",
+      "setup": "",
+      "run": "cat 150-finish-extra-results",
+      "input": "",
+      "output": "Supplier\\s+Claire\\s+completed",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "150 finish extra Dan complete",
+      "setup": "",
+      "run": "cat 150-finish-extra-results",
+      "input": "",
+      "output": "Consumer\\s+Dan\\s+completed",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "150 finish extra Ed complete",
+      "setup": "",
+      "run": "cat 150-finish-extra-results",
+      "input": "",
+      "output": "Consumer\\s+Ed\\s+completed",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "150 finish extra Fran complete",
+      "setup": "",
+      "run": "cat 150-finish-extra-results",
+      "input": "",
+      "output": "Consumer\\s+Fran\\s+completed",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "150 finish exact completion",
+      "setup": "",
+      "run": "cat 150-finish-extra-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+All\\s+threads\\s+completed\\.\\s+Total\\s+consumed\\s+=\\s+1700\\.\\s+Final\\s+stock\\s+=\\s+1",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 2
+    },
+    {
+      "name": "200 finish exact 1 Running",
+      "setup": "chmod 700 200-finish-exact-1-test",
+      "run": "./200-finish-exact-1-test > 200-finish-exact-1-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 8,
+      "points": 6
+    },
+    {
+      "name": "200 Finish exact 1 Supplier 1",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+1\\s+going\\s+to\\s+wait",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 Supplier 2",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+2\\s+going\\s+to\\s+wait",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 Supplier 3",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+3\\s+going\\s+to\\s+wait",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 Supplier 1 Count",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results | grep \"Supplier 1 removed 11 units. Total consumed = \" | wc -l",
+      "input": "",
+      "output": "10",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 Supplier 2 Count",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results | grep \"Supplier 2 removed 11 units. Total consumed = \" | wc -l",
+      "input": "",
+      "output": "30",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 Supplier 3 Count",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results | grep \"Supplier 3 removed 9 units. Total consumed = \" | wc -l",
+      "input": "",
+      "output": "50",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 Consumer 1 Count",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results | grep \"Consumer 1 supplied 7 units. Stock after = \" | wc -l",
+      "input": "",
+      "output": "20",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 Consumer 2 Count",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results | grep \"Consumer 2 supplied 9 units. Stock after = \" | wc -l",
+      "input": "",
+      "output": "50",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 Consumer 3 Count",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results | grep \"Consumer 3 supplied 6 units. Stock after = \" | wc -l",
+      "input": "",
+      "output": "50",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 Finish exact 1 completion",
+      "setup": "",
+      "run": "cat 200-finish-exact-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+All\\s+threads\\s+completed\\.\\s+Total\\s+consumed\\s+=\\s+890\\.\\s+Final\\s+stock\\s+=\\s+0",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 2
+    },
+    {
+      "name": "200 Finish exact 2 Running",
+      "setup": "chmod 700 200-finish-exact-2-test",
+      "run": "./200-finish-exact-2-test > 200-finish-exact-2-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 7,
+      "points": 6
+    },
+    {
+      "name": "200 Finish exact 2 completion",
+      "setup": "",
+      "run": "cat 200-finish-exact-2-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+All\\s+threads\\s+completed\\.\\s+Total\\s+consumed\\s+=\\s+1366\\.\\s+Final\\s+stock\\s+=\\s+0",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 2
+    },
+    {
+      "name": "200 Finish Extra Running",
+      "setup": "chmod 700 200-finish-extra-test",
+      "run": "./200-finish-extra-test > 200-finish-extra-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 6
+    },
+    {
+      "name": "200 Finish extra completion",
+      "setup": "",
+      "run": "cat 200-finish-extra-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+All\\s+threads\\s+completed\\.\\s+Total\\s+consumed\\s+=\\s+752\\.\\s+Final\\s+stock\\s+=\\s+148",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 1 running",
+      "setup": "chmod 700 200-nofinish-too-few-1-test",
+      "run": "./200-nofinish-too-few-1-test > 200-nofinish-too-few-1-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 6,
+      "points": 0
+    },
+    {
+      "name": "200 no finish too few 1 Consumer 1",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+1\\s+going\\s+to\\s+wait",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 1 Consumer 2",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+2\\s+going\\s+to\\s+wait",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 1 Consumer 3",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+3\\s+going\\s+to\\s+wait",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 1 No complete",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-1-results | grep \"All\\s*threads\\s*completed\" | wc -l",
+      "input": "",
+      "output": "0",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 1 Supplier 1",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+1\\s+supplied\\s+6\\s+units\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 1 Supplier 2",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+2\\s+supplied\\s+10\\s+units\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 no finish too few 1 Supplier 3",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-1-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+3\\s+supplied\\s+6\\s+units\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 no finish too few 2 Running",
+      "setup": "chmod 700 200-nofinish-too-few-2-test",
+      "run": "./200-nofinish-too-few-2-test > 200-nofinish-too-few-2-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "200 no finish too few 2 Supplier 1",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-2-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+1\\s+supplied\\s+9\\s+units\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 2 Supplier 2",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-2-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+2\\s+supplied\\s+7\\s+units\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 2 Supplier 3",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-2-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+3\\s+supplied\\s+6\\s+units\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 2 Consumer 1",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-2-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+1\\s+removed\\s+2\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 2 No complete",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-2-results | grep \"All\\s*threads\\s*completed\" | wc -l",
+      "input": "",
+      "output": "0",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too few 2 Consumer 2",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-2-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+2\\s+removed\\s+4\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 no finish too few 2 Consumer 3",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-2-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+3\\s+removed\\s+50\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 no finish too few 2 Consumer waiting",
+      "setup": "",
+      "run": "cat 200-nofinish-too-few-2-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+\\d+\\s+going\\s+to\\s+wait",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "200 no finish too many running",
+      "setup": "chmod 700 200-nofinish-too-many-test",
+      "run": "./200-nofinish-too-many-test > 200-nofinish-too-many-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "200 no finish too many no complete",
+      "setup": "",
+      "run": "cat 200-nofinish-too-many-results | grep \"All\\s*threads\\s*completed\" | wc -l",
+      "input": "",
+      "output": "0",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too many Consumer 1",
+      "setup": "",
+      "run": "cat 200-nofinish-too-many-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+1\\s+removed\\s+5\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too many Consumer 2",
+      "setup": "",
+      "run": "cat 200-nofinish-too-many-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+2\\s+removed\\s+10\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too many Consumer 3",
+      "setup": "",
+      "run": "cat 200-nofinish-too-many-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Consumer\\s+3\\s+removed\\s+15\\s+units\\.\\s+Total\\s+consumed\\s+=\\s+\\d+\\.\\s+Stock\\s+after\\s+=\\s+\\d+",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "200 no finish too many Supplier waiting",
+      "setup": "",
+      "run": "cat 200-nofinish-too-many-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+Supplier\\s+\\d+\\s+going\\s+to\\s+wait",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "500 finish extra Running",
+      "setup": "chmod 700 500-finish-extra-test",
+      "run": "./500-finish-extra-test > 500-finish-extra-results",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 9,
+      "points": 6
+    },
+    {
+      "name": "500 finish extra completion",
+      "setup": "",
+      "run": "cat 500-finish-extra-results",
+      "input": "",
+      "output": "...\\s+...\\s+\\d+\\s+\\d+:\\d+:\\d+\\s+\\d\\d\\d\\d\\s+All\\s+threads\\s+completed\\.\\s+Total\\s+consumed\\s+=\\s+5775\\.\\s+Final\\s+stock\\s+=\\s+225",
+      "comparison": "regex",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "500 finish extra Supplier",
+      "setup": "",
+      "run": "cat 500-finish-extra-results",
+      "input": "",
+      "output": "...\\s*...\\s*\\d+\\s*\\d+:\\d+:\\d+\\s*\\d\\d\\d\\d\\s*Adam Aaronson\\s*supplied\\s*300\\s*units.\\s*Stock\\s*after\\s*=",
+      "comparison": "regex",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "500 finish extra Adam Aaronson Count",
+      "setup": "",
+      "run": "cat 500-finish-extra-results | grep \"Adam Aaronson supplied 300 units.\" | wc -l",
+      "input": "",
+      "output": "20",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "500 finish extra Bradley Bradford Count",
+      "setup": "",
+      "run": "cat 500-finish-extra-results | grep \"Bradley Bradford removed 25 units.\" | wc -l",
+      "input": "",
+      "output": "49",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "500 finish extra Charlie Chaplain Count",
+      "setup": "",
+      "run": "cat 500-finish-extra-results | grep \"Charlie Chaplain removed 60 units.\" | wc -l",
+      "input": "",
+      "output": "20",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "500 finish extra Danny Devito Count",
+      "setup": "",
+      "run": "cat 500-finish-extra-results | grep \"Danny Devito removed 5 units.\" | wc -l",
+      "input": "",
+      "output": "30",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "500 finish extra Edward Emulsifier Count",
+      "setup": "",
+      "run": "cat 500-finish-extra-results | grep \"Edward Emulsifier removed 180 units\" | wc -l",
+      "input": "",
+      "output": "10",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "500 finish extra Franklin Foer Count",
+      "setup": "",
+      "run": "cat 500-finish-extra-results | grep \"Franklin Foer removed 50 units\" | wc -l",
+      "input": "",
+      "output": "15",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "500 finish extra Gigi Glover Count",
+      "setup": "",
+      "run": "cat 500-finish-extra-results | grep \"Gigi Glover removed 450 units\" | wc -l",
+      "input": "",
+      "output": "1",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    },
+    {
+      "name": "500 finish extra Harriet Housedorf Count",
+      "setup": "",
+      "run": "cat 500-finish-extra-results | grep \"Harriet Housedorf removed 100 units\" | wc -l",
+      "input": "",
+      "output": "2",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 0
+    }
+  ]
+}

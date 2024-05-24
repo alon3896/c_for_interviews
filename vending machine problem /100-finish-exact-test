@@ -1,0 +1,1 @@
+./vending 100 tests/100-Finish-Exact/consumer1.txt  tests/100-Finish-Exact/consumer2.txt tests/100-Finish-Exact/consumer3.txt tests/100-Finish-Exact/supplier1.txt tests/100-Finish-Exact/supplier2.txt tests/100-Finish-Exact/supplier3.txt

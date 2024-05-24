@@ -1,0 +1,1 @@
+./vending 500 tests/500-Finish-Extra/consumer1.txt  tests/500-Finish-Extra/consumer2.txt tests/500-Finish-Extra/consumer3.txt tests/500-Finish-Extra/supplier1.txt tests/500-Finish-Extra/consumer4.txt tests/500-Finish-Extra/consumer5.txt tests/500-Finish-Extra/consumer6.txt tests/500-Finish-Extra/consumer7.txt

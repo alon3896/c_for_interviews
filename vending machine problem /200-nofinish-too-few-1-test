@@ -1,0 +1,1 @@
+./vending 200 tests/200-NoFinish-TooFew-1/consumer1-Configuration.txt tests/200-NoFinish-TooFew-1/supplier1-Configuration.txt tests/200-NoFinish-TooFew-1/supplier2-Configuration.txt tests/200-NoFinish-TooFew-1/supplier3-Configuration.txt tests/200-NoFinish-TooFew-1/consumer2-Configuration.txt tests/200-NoFinish-TooFew-1/consumer3-Configuration.txt 

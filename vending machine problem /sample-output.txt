@@ -1,0 +1,261 @@
+Initialized consumer: Dan
+Consumer Dan has period 17 seconds
+Consumer Dan has 17 iterations.
+Consumer Dan consumes 12 units at a time.
+Initialized consumer: Fran
+Consumer Fran has period 7 seconds
+Consumer Fran has 28 iterations.
+Consumer Fran consumes 17 units at a time.
+Thu Jan  5 13:39:00 2023 Dan going to wait.
+Thu Jan  5 13:39:00 2023 Fran going to wait.
+Initialized consumer: Ed
+Consumer Ed has period 5 seconds
+Consumer Ed has 30 iterations.
+Consumer Ed consumes 34 units at a time.
+Thu Jan  5 13:39:00 2023 Ed going to wait.
+Initialized supplier: Alice
+Supplier Alice has period 19 seconds
+Supplier Alice has 12 iterations.
+Supplier Alice supplies 20 units at a time.
+Thu Jan  5 13:39:00 2023 Alice supplied 20 units. Stock after = 20
+Thu Jan  5 13:39:00 2023 Fran removed 17 units. Total consumed = 17. Stock after = 3
+Thu Jan  5 13:39:00 2023 Dan going to wait.
+Thu Jan  5 13:39:00 2023 Ed going to wait.
+Initialized supplier: Claire
+Supplier Claire has period 3 seconds
+Supplier Claire has 18 iterations.
+Supplier Claire supplies 17 units at a time.
+Thu Jan  5 13:39:00 2023 Claire supplied 17 units. Stock after = 20
+Thu Jan  5 13:39:00 2023 Dan removed 12 units. Total consumed = 29. Stock after = 8
+Thu Jan  5 13:39:00 2023 Ed going to wait.
+Initialized supplier: Bob
+Supplier Bob has period 14 seconds
+Supplier Bob has 33 iterations.
+Supplier Bob supplies 35 units at a time.
+Thu Jan  5 13:39:00 2023 Bob supplied 35 units. Stock after = 43
+Thu Jan  5 13:39:00 2023 Ed removed 34 units. Total consumed = 63. Stock after = 9
+Thu Jan  5 13:39:03 2023 Claire supplied 17 units. Stock after = 26
+Thu Jan  5 13:39:05 2023 Ed going to wait.
+Thu Jan  5 13:39:06 2023 Claire supplied 17 units. Stock after = 43
+Thu Jan  5 13:39:06 2023 Ed removed 34 units. Total consumed = 97. Stock after = 9
+Thu Jan  5 13:39:07 2023 Fran going to wait.
+Thu Jan  5 13:39:09 2023 Claire supplied 17 units. Stock after = 26
+Thu Jan  5 13:39:09 2023 Fran removed 17 units. Total consumed = 114. Stock after = 9
+Thu Jan  5 13:39:11 2023 Ed going to wait.
+Thu Jan  5 13:39:12 2023 Claire supplied 17 units. Stock after = 26
+Thu Jan  5 13:39:12 2023 Ed going to wait.
+Thu Jan  5 13:39:14 2023 Bob supplied 35 units. Stock after = 61
+Thu Jan  5 13:39:14 2023 Ed removed 34 units. Total consumed = 148. Stock after = 27
+Thu Jan  5 13:39:15 2023 Claire supplied 17 units. Stock after = 44
+Thu Jan  5 13:39:16 2023 Fran removed 17 units. Total consumed = 165. Stock after = 27
+Thu Jan  5 13:39:17 2023 Dan removed 12 units. Total consumed = 177. Stock after = 15
+Thu Jan  5 13:39:18 2023 Claire supplied 17 units. Stock after = 32
+Thu Jan  5 13:39:19 2023 Alice supplied 20 units. Stock after = 52
+Thu Jan  5 13:39:19 2023 Ed removed 34 units. Total consumed = 211. Stock after = 18
+Thu Jan  5 13:39:21 2023 Claire supplied 17 units. Stock after = 35
+Thu Jan  5 13:39:23 2023 Fran removed 17 units. Total consumed = 228. Stock after = 18
+Thu Jan  5 13:39:24 2023 Ed going to wait.
+Thu Jan  5 13:39:24 2023 Claire supplied 17 units. Stock after = 35
+Thu Jan  5 13:39:24 2023 Ed removed 34 units. Total consumed = 262. Stock after = 1
+Thu Jan  5 13:39:27 2023 Claire supplied 17 units. Stock after = 18
+Thu Jan  5 13:39:28 2023 Bob supplied 35 units. Stock after = 53
+Thu Jan  5 13:39:29 2023 Ed removed 34 units. Total consumed = 296. Stock after = 19
+Thu Jan  5 13:39:30 2023 Fran removed 17 units. Total consumed = 313. Stock after = 2
+Thu Jan  5 13:39:30 2023 Claire supplied 17 units. Stock after = 19
+Thu Jan  5 13:39:33 2023 Claire supplied 17 units. Stock after = 36
+Thu Jan  5 13:39:34 2023 Dan removed 12 units. Total consumed = 325. Stock after = 24
+Thu Jan  5 13:39:34 2023 Ed going to wait.
+Thu Jan  5 13:39:36 2023 Claire supplied 17 units. Stock after = 41
+Thu Jan  5 13:39:36 2023 Ed removed 34 units. Total consumed = 359. Stock after = 7
+Thu Jan  5 13:39:37 2023 Fran going to wait.
+Thu Jan  5 13:39:38 2023 Alice supplied 20 units. Stock after = 27
+Thu Jan  5 13:39:38 2023 Fran removed 17 units. Total consumed = 376. Stock after = 10
+Thu Jan  5 13:39:39 2023 Claire supplied 17 units. Stock after = 27
+Thu Jan  5 13:39:41 2023 Ed going to wait.
+Thu Jan  5 13:39:42 2023 Bob supplied 35 units. Stock after = 62
+Thu Jan  5 13:39:42 2023 Ed removed 34 units. Total consumed = 410. Stock after = 28
+Thu Jan  5 13:39:42 2023 Claire supplied 17 units. Stock after = 45
+Thu Jan  5 13:39:45 2023 Fran removed 17 units. Total consumed = 427. Stock after = 28
+Thu Jan  5 13:39:45 2023 Claire supplied 17 units. Stock after = 45
+Thu Jan  5 13:39:47 2023 Ed removed 34 units. Total consumed = 461. Stock after = 11
+Thu Jan  5 13:39:48 2023 Claire supplied 17 units. Stock after = 28
+Thu Jan  5 13:39:51 2023 Dan removed 12 units. Total consumed = 473. Stock after = 16
+Thu Jan  5 13:39:51 2023 Claire supplied 17 units. Stock after = 33
+Thu Jan  5 13:39:52 2023 Fran removed 17 units. Total consumed = 490. Stock after = 16
+Thu Jan  5 13:39:52 2023 Ed going to wait.
+Supplier Claire completed
+Thu Jan  5 13:39:56 2023 Bob supplied 35 units. Stock after = 51
+Thu Jan  5 13:39:56 2023 Ed removed 34 units. Total consumed = 524. Stock after = 17
+Thu Jan  5 13:39:57 2023 Alice supplied 20 units. Stock after = 37
+Thu Jan  5 13:39:59 2023 Fran removed 17 units. Total consumed = 541. Stock after = 20
+Thu Jan  5 13:40:01 2023 Ed going to wait.
+Thu Jan  5 13:40:06 2023 Fran removed 17 units. Total consumed = 558. Stock after = 3
+Thu Jan  5 13:40:08 2023 Dan going to wait.
+Thu Jan  5 13:40:10 2023 Bob supplied 35 units. Stock after = 38
+Thu Jan  5 13:40:10 2023 Ed removed 34 units. Total consumed = 592. Stock after = 4
+Thu Jan  5 13:40:10 2023 Dan going to wait.
+Thu Jan  5 13:40:13 2023 Fran going to wait.
+Thu Jan  5 13:40:15 2023 Ed going to wait.
+Thu Jan  5 13:40:16 2023 Alice supplied 20 units. Stock after = 24
+Thu Jan  5 13:40:16 2023 Ed going to wait.
+Thu Jan  5 13:40:16 2023 Fran removed 17 units. Total consumed = 609. Stock after = 7
+Thu Jan  5 13:40:16 2023 Dan going to wait.
+Thu Jan  5 13:40:23 2023 Fran going to wait.
+Thu Jan  5 13:40:24 2023 Bob supplied 35 units. Stock after = 42
+Thu Jan  5 13:40:24 2023 Ed removed 34 units. Total consumed = 643. Stock after = 8
+Thu Jan  5 13:40:24 2023 Dan going to wait.
+Thu Jan  5 13:40:24 2023 Fran going to wait.
+Thu Jan  5 13:40:29 2023 Ed going to wait.
+Thu Jan  5 13:40:35 2023 Alice supplied 20 units. Stock after = 28
+Thu Jan  5 13:40:35 2023 Ed going to wait.
+Thu Jan  5 13:40:35 2023 Fran removed 17 units. Total consumed = 660. Stock after = 11
+Thu Jan  5 13:40:35 2023 Dan going to wait.
+Thu Jan  5 13:40:38 2023 Bob supplied 35 units. Stock after = 46
+Thu Jan  5 13:40:38 2023 Dan removed 12 units. Total consumed = 672. Stock after = 34
+Thu Jan  5 13:40:38 2023 Ed removed 34 units. Total consumed = 706. Stock after = 0
+Thu Jan  5 13:40:42 2023 Fran going to wait.
+Thu Jan  5 13:40:43 2023 Ed going to wait.
+Thu Jan  5 13:40:52 2023 Bob supplied 35 units. Stock after = 35
+Thu Jan  5 13:40:52 2023 Ed removed 34 units. Total consumed = 740. Stock after = 1
+Thu Jan  5 13:40:52 2023 Fran going to wait.
+Thu Jan  5 13:40:54 2023 Alice supplied 20 units. Stock after = 21
+Thu Jan  5 13:40:54 2023 Fran removed 17 units. Total consumed = 757. Stock after = 4
+Thu Jan  5 13:40:55 2023 Dan going to wait.
+Thu Jan  5 13:40:57 2023 Ed going to wait.
+Thu Jan  5 13:41:01 2023 Fran going to wait.
+Thu Jan  5 13:41:06 2023 Bob supplied 35 units. Stock after = 39
+Thu Jan  5 13:41:06 2023 Ed removed 34 units. Total consumed = 791. Stock after = 5
+Thu Jan  5 13:41:06 2023 Dan going to wait.
+Thu Jan  5 13:41:06 2023 Fran going to wait.
+Thu Jan  5 13:41:11 2023 Ed going to wait.
+Thu Jan  5 13:41:13 2023 Alice supplied 20 units. Stock after = 25
+Thu Jan  5 13:41:13 2023 Ed going to wait.
+Thu Jan  5 13:41:13 2023 Dan removed 12 units. Total consumed = 803. Stock after = 13
+Thu Jan  5 13:41:13 2023 Fran going to wait.
+Thu Jan  5 13:41:20 2023 Bob supplied 35 units. Stock after = 48
+Thu Jan  5 13:41:20 2023 Ed removed 34 units. Total consumed = 837. Stock after = 14
+Thu Jan  5 13:41:20 2023 Fran going to wait.
+Thu Jan  5 13:41:25 2023 Ed going to wait.
+Thu Jan  5 13:41:30 2023 Dan removed 12 units. Total consumed = 849. Stock after = 2
+Thu Jan  5 13:41:32 2023 Alice supplied 20 units. Stock after = 22
+Thu Jan  5 13:41:32 2023 Ed going to wait.
+Thu Jan  5 13:41:32 2023 Fran removed 17 units. Total consumed = 866. Stock after = 5
+Thu Jan  5 13:41:34 2023 Bob supplied 35 units. Stock after = 40
+Thu Jan  5 13:41:34 2023 Ed removed 34 units. Total consumed = 900. Stock after = 6
+Thu Jan  5 13:41:39 2023 Fran going to wait.
+Thu Jan  5 13:41:39 2023 Ed going to wait.
+Thu Jan  5 13:41:47 2023 Dan going to wait.
+Thu Jan  5 13:41:48 2023 Bob supplied 35 units. Stock after = 41
+Thu Jan  5 13:41:48 2023 Fran removed 17 units. Total consumed = 917. Stock after = 24
+Thu Jan  5 13:41:48 2023 Ed going to wait.
+Thu Jan  5 13:41:48 2023 Dan removed 12 units. Total consumed = 929. Stock after = 12
+Thu Jan  5 13:41:51 2023 Alice supplied 20 units. Stock after = 32
+Thu Jan  5 13:41:51 2023 Ed going to wait.
+Thu Jan  5 13:41:55 2023 Fran removed 17 units. Total consumed = 946. Stock after = 15
+Thu Jan  5 13:42:02 2023 Bob supplied 35 units. Stock after = 50
+Thu Jan  5 13:42:02 2023 Fran removed 17 units. Total consumed = 963. Stock after = 33
+Thu Jan  5 13:42:02 2023 Ed going to wait.
+Thu Jan  5 13:42:05 2023 Dan removed 12 units. Total consumed = 975. Stock after = 21
+Thu Jan  5 13:42:09 2023 Fran removed 17 units. Total consumed = 992. Stock after = 4
+Thu Jan  5 13:42:10 2023 Alice supplied 20 units. Stock after = 24
+Thu Jan  5 13:42:10 2023 Ed going to wait.
+Thu Jan  5 13:42:16 2023 Bob supplied 35 units. Stock after = 59
+Thu Jan  5 13:42:16 2023 Fran removed 17 units. Total consumed = 1009. Stock after = 42
+Thu Jan  5 13:42:16 2023 Ed removed 34 units. Total consumed = 1043. Stock after = 8
+Thu Jan  5 13:42:21 2023 Ed going to wait.
+Thu Jan  5 13:42:22 2023 Dan going to wait.
+Thu Jan  5 13:42:23 2023 Fran going to wait.
+Thu Jan  5 13:42:29 2023 Alice supplied 20 units. Stock after = 28
+Thu Jan  5 13:42:29 2023 Ed going to wait.
+Thu Jan  5 13:42:29 2023 Fran removed 17 units. Total consumed = 1060. Stock after = 11
+Thu Jan  5 13:42:29 2023 Dan going to wait.
+Thu Jan  5 13:42:30 2023 Bob supplied 35 units. Stock after = 46
+Thu Jan  5 13:42:30 2023 Ed removed 34 units. Total consumed = 1094. Stock after = 12
+Thu Jan  5 13:42:30 2023 Dan removed 12 units. Total consumed = 1106. Stock after = 0
+Thu Jan  5 13:42:35 2023 Ed going to wait.
+Thu Jan  5 13:42:36 2023 Fran going to wait.
+Thu Jan  5 13:42:44 2023 Bob supplied 35 units. Stock after = 35
+Thu Jan  5 13:42:44 2023 Ed removed 34 units. Total consumed = 1140. Stock after = 1
+Thu Jan  5 13:42:44 2023 Fran going to wait.
+Thu Jan  5 13:42:47 2023 Dan going to wait.
+Supplier Alice completed
+Thu Jan  5 13:42:49 2023 Ed going to wait.
+Thu Jan  5 13:42:58 2023 Bob supplied 35 units. Stock after = 36
+Thu Jan  5 13:42:58 2023 Fran removed 17 units. Total consumed = 1157. Stock after = 19
+Thu Jan  5 13:42:58 2023 Ed going to wait.
+Thu Jan  5 13:42:58 2023 Dan removed 12 units. Total consumed = 1169. Stock after = 7
+Thu Jan  5 13:43:05 2023 Fran going to wait.
+Thu Jan  5 13:43:12 2023 Bob supplied 35 units. Stock after = 42
+Thu Jan  5 13:43:12 2023 Ed removed 34 units. Total consumed = 1203. Stock after = 8
+Thu Jan  5 13:43:12 2023 Fran going to wait.
+Thu Jan  5 13:43:15 2023 Dan going to wait.
+Thu Jan  5 13:43:17 2023 Ed going to wait.
+Thu Jan  5 13:43:26 2023 Bob supplied 35 units. Stock after = 43
+Thu Jan  5 13:43:26 2023 Fran removed 17 units. Total consumed = 1220. Stock after = 26
+Thu Jan  5 13:43:26 2023 Dan removed 12 units. Total consumed = 1232. Stock after = 14
+Thu Jan  5 13:43:26 2023 Ed going to wait.
+Thu Jan  5 13:43:33 2023 Fran going to wait.
+Thu Jan  5 13:43:40 2023 Bob supplied 35 units. Stock after = 49
+Thu Jan  5 13:43:40 2023 Ed removed 34 units. Total consumed = 1266. Stock after = 15
+Thu Jan  5 13:43:40 2023 Fran going to wait.
+Thu Jan  5 13:43:43 2023 Dan removed 12 units. Total consumed = 1278. Stock after = 3
+Thu Jan  5 13:43:45 2023 Ed going to wait.
+Thu Jan  5 13:43:54 2023 Bob supplied 35 units. Stock after = 38
+Thu Jan  5 13:43:54 2023 Fran removed 17 units. Total consumed = 1295. Stock after = 21
+Thu Jan  5 13:43:54 2023 Ed going to wait.
+Thu Jan  5 13:44:00 2023 Dan removed 12 units. Total consumed = 1307. Stock after = 9
+Thu Jan  5 13:44:01 2023 Fran going to wait.
+Thu Jan  5 13:44:08 2023 Bob supplied 35 units. Stock after = 44
+Thu Jan  5 13:44:08 2023 Ed removed 34 units. Total consumed = 1341. Stock after = 10
+Thu Jan  5 13:44:08 2023 Fran going to wait.
+Thu Jan  5 13:44:13 2023 Ed going to wait.
+Thu Jan  5 13:44:17 2023 Dan going to wait.
+Thu Jan  5 13:44:22 2023 Bob supplied 35 units. Stock after = 45
+Thu Jan  5 13:44:22 2023 Dan removed 12 units. Total consumed = 1353. Stock after = 33
+Thu Jan  5 13:44:22 2023 Ed going to wait.
+Thu Jan  5 13:44:22 2023 Fran removed 17 units. Total consumed = 1370. Stock after = 16
+Thu Jan  5 13:44:29 2023 Fran going to wait.
+Thu Jan  5 13:44:36 2023 Bob supplied 35 units. Stock after = 51
+Thu Jan  5 13:44:36 2023 Ed removed 34 units. Total consumed = 1404. Stock after = 17
+Thu Jan  5 13:44:36 2023 Fran removed 17 units. Total consumed = 1421. Stock after = 0
+Thu Jan  5 13:44:39 2023 Dan going to wait.
+Thu Jan  5 13:44:41 2023 Ed going to wait.
+Thu Jan  5 13:44:43 2023 Fran going to wait.
+Thu Jan  5 13:44:50 2023 Bob supplied 35 units. Stock after = 35
+Thu Jan  5 13:44:50 2023 Ed removed 34 units. Total consumed = 1455. Stock after = 1
+Thu Jan  5 13:44:50 2023 Fran going to wait.
+Thu Jan  5 13:44:50 2023 Dan going to wait.
+Thu Jan  5 13:44:55 2023 Ed going to wait.
+Thu Jan  5 13:45:04 2023 Bob supplied 35 units. Stock after = 36
+Thu Jan  5 13:45:04 2023 Fran removed 17 units. Total consumed = 1472. Stock after = 19
+Thu Jan  5 13:45:04 2023 Ed going to wait.
+Thu Jan  5 13:45:04 2023 Dan removed 12 units. Total consumed = 1484. Stock after = 7
+Thu Jan  5 13:45:11 2023 Fran going to wait.
+Thu Jan  5 13:45:18 2023 Bob supplied 35 units. Stock after = 42
+Thu Jan  5 13:45:18 2023 Ed removed 34 units. Total consumed = 1518. Stock after = 8
+Thu Jan  5 13:45:18 2023 Fran going to wait.
+Thu Jan  5 13:45:21 2023 Dan going to wait.
+Thu Jan  5 13:45:23 2023 Ed going to wait.
+Thu Jan  5 13:45:32 2023 Bob supplied 35 units. Stock after = 43
+Thu Jan  5 13:45:32 2023 Fran removed 17 units. Total consumed = 1535. Stock after = 26
+Thu Jan  5 13:45:32 2023 Ed going to wait.
+Thu Jan  5 13:45:32 2023 Dan removed 12 units. Total consumed = 1547. Stock after = 14
+Thu Jan  5 13:45:39 2023 Fran going to wait.
+Thu Jan  5 13:45:46 2023 Bob supplied 35 units. Stock after = 49
+Thu Jan  5 13:45:46 2023 Ed removed 34 units. Total consumed = 1581. Stock after = 15
+Thu Jan  5 13:45:46 2023 Fran going to wait.
+Consumer Dan completed
+Thu Jan  5 13:45:51 2023 Ed going to wait.
+Thu Jan  5 13:46:00 2023 Bob supplied 35 units. Stock after = 50
+Thu Jan  5 13:46:00 2023 Fran removed 17 units. Total consumed = 1598. Stock after = 33
+Thu Jan  5 13:46:00 2023 Ed going to wait.
+Consumer Fran completed
+Thu Jan  5 13:46:14 2023 Bob supplied 35 units. Stock after = 68
+Thu Jan  5 13:46:14 2023 Ed removed 34 units. Total consumed = 1632. Stock after = 34
+Thu Jan  5 13:46:19 2023 Ed removed 34 units. Total consumed = 1666. Stock after = 0
+Thu Jan  5 13:46:24 2023 Ed going to wait.
+Thu Jan  5 13:46:28 2023 Bob supplied 35 units. Stock after = 35
+Thu Jan  5 13:46:28 2023 Ed removed 34 units. Total consumed = 1700. Stock after = 1
+Consumer Ed completed
+Supplier Bob completed
+Thu Jan  5 13:46:42 2023 All threads completed. Total consumed = 1700. Final stock = 1
