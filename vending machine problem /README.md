@@ -5,9 +5,9 @@ Template repository for assignment 3 in the Operating Systems 5783 course
 Lecturer: Michael J May, Kinneret College on the Sea of Galilee
 
 # Submitted by
-Student 1: Alon Haim Chitlaru 206796633
+Student 1: Alon Haim Chitlaru 
 
-Student 2: Alina Surov 321772758
+Student 2: Alina Surov 
 
 # Hours worked
 
